@@ -6,3 +6,5 @@
 - `cd hello`
 - `go mod edit -replace example.com/greeting=../greetings`
 - `go mod tidy`
+
+- go.work is use by your eiditor to track the files
