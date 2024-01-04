@@ -24,4 +24,15 @@ func main() {
 	// if no error was return then print the greeting message
 	//message, err := greetings.Hello("Max Tysan")
 	fmt.Println(message)
+
+	// A slice of names.
+	names := []string{"Gladys", "Samantha", "Darrin"}
+
+	messages, err := greetings.Hellos(names)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(messages)
 }
